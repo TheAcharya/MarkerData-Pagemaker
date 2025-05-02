@@ -329,7 +329,7 @@
                          const event = new Event('change');
                          fileInput.dispatchEvent(event);
                      } else {
-                         showError("Please drop a folder extracted from Marker Data");
+                         showError("Please drop a folder extracted from Marker Data. Only Notion or Airtable profiles are supported.");
                      }
                  }
              }
@@ -369,7 +369,7 @@
                  );
                  
                  if (jsonFiles.length === 0) {
-                     showError("Compatible JSON file not found. Only Notion or Airtable Data Sets are supported.");
+                     showError("Compatible JSON file not found. Only Notion or Airtable profiles are supported.");
                      return;
                  }
                  
@@ -529,7 +529,7 @@
                          );
                          
                          if (jsonFiles.length === 0) {
-                             showError("Compatible JSON file not found. Only Notion or Airtable Data Sets are supported.");
+                             showError("Compatible JSON file not found. Only Notion or Airtable profiles are supported.");
                              return;
                          }
                          
