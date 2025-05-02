@@ -183,7 +183,7 @@
                      <i data-lucide="folder" class="w-8 h-8 text-gray-400 dark:text-dark-secondary"></i>
                   </div>
                   <div>
-                     <p class="text-lg font-medium text-gray-700 dark:text-dark-text mb-1">Drop your Marker Data folder here</p>
+                     <p class="text-lg font-medium text-gray-700 dark:text-dark-text mb-1">Drop your Marker Data's Extracted Data Set</p>
                      <p class="text-sm text-gray-500 dark:text-dark-secondary">or click to open folder</p>
                   </div>
                </div>
@@ -197,10 +197,15 @@
          </div>
       </div>
       <!-- PDF export progress loading overlay -->
-      <div id="pdf-loader" class="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center z-50 text-white text-xl flex-col hidden">
-         <div>Generating PDF...</div>
-         <div class="w-[300px] h-5 bg-gray-700 rounded-full mt-5 overflow-hidden">
-            <div id="progress-bar" class="h-full bg-primary transition-all duration-300" style="width: 0%"></div>
+      <div id="pdf-loader" class="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50 text-white flex-col hidden">
+         <div class="bg-white dark:bg-dark-surface shadow-md rounded-lg px-8 py-6 flex flex-col items-center">
+            <div class="flex items-center space-x-3 mb-4">
+               <div class="w-6 h-6 border-2 border-primary border-t-transparent rounded-full animate-spin"></div>
+               <span class="text-gray-700 dark:text-dark-text font-medium">Generating PDF...</span>
+            </div>
+            <div class="w-full h-4 bg-gray-200 dark:bg-gray-700 rounded-full mt-2 overflow-hidden">
+               <div id="progress-bar" class="h-full bg-primary transition-all duration-300" style="width: 0%"></div>
+            </div>
          </div>
       </div>
       <script>
@@ -324,7 +329,7 @@
                          const event = new Event('change');
                          fileInput.dispatchEvent(event);
                      } else {
-                         showError("Please drop a folder or a JSON file");
+                         showError("Please drop a folder extracted from Marker Data");
                      }
                  }
              }
@@ -364,7 +369,7 @@
                  );
                  
                  if (jsonFiles.length === 0) {
-                     showError("No JSON file found in the folder (excluding extract_info.json)");
+                     showError("Compatible JSON file not found. Only Notion or Airtable Data Sets are supported.");
                      return;
                  }
                  
@@ -524,7 +529,7 @@
                          );
                          
                          if (jsonFiles.length === 0) {
-                             showError("No JSON file found in the folder (excluding extract_info.json)");
+                             showError("Compatible JSON file not found. Only Notion or Airtable Data Sets are supported.");
                              return;
                          }
                          
@@ -554,7 +559,7 @@
          if (dropZoneContent) {
              const paragraphs = dropZoneContent.querySelectorAll('p');
              if (paragraphs && paragraphs.length >= 2) {
-                 paragraphs[0].textContent = 'Drop your Marker Data folder here';
+                 paragraphs[0].textContent = 'Drop your Marker Data\'s Extracted Data Set';
                  paragraphs[1].textContent = 'or click to open folder';
              }
          }
