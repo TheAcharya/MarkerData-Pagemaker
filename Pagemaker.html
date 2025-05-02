@@ -77,7 +77,7 @@
          .card-checkbox {
          z-index: 10;
          }
-         /* Placeholder behaviour */
+         /* Placeholder text behaviour */
          @media (max-width: 1280px) {
          #search-placeholder {
          display: none !important;
@@ -450,9 +450,9 @@
              }
          }
          
-         // =================================================================
+         // ==================================================================================
          // Event listeners for page unload and page visibility change
-         // =================================================================
+         // ==================================================================================
          
          // Add event listener to clean up blob URLs when the page is hidden or unloaded
          window.addEventListener('visibilitychange', () => {
@@ -464,7 +464,7 @@
          window.addEventListener('beforeunload', cleanupBlobUrls);
          
          // ==================================================================================
-         // Click handler for drop zone to select a folder
+         // Click handler for drop zone to select a folder with Swift WebKit interception
          // ==================================================================================
          
          dropZone.addEventListener('click', async () => {
@@ -492,9 +492,11 @@
                          
                          // Show loading indicator
                          galleryContainer.innerHTML = `
-                             <div class="flex items-center justify-center p-8">
-                                 <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
-                                 <span class="ml-3 text-gray-600 dark:text-dark-secondary">Processing folder...</span>
+                             <div class="flex justify-center items-center p-8">
+                               <div class="bg-white dark:bg-dark-surface shadow-md rounded-lg px-6 py-4 flex items-center space-x-3">
+                                 <div class="w-5 h-5 border-2 border-primary border-t-transparent rounded-full animate-spin"></div>
+                                 <span class="text-gray-700 dark:text-dark-text font-medium">Processing folder...</span>
+                               </div>
                              </div>
                          `;
                          
@@ -536,9 +538,9 @@
              }
          });
          
-         // =================================================================
+         // ==================================================================================
          // Drop zone text to reflect folder drop capability
-         // =================================================================
+         // ==================================================================================
          
          const dropZoneContent = dropZone.querySelector('div > div:nth-child(2)');
          if (dropZoneContent) {
@@ -729,7 +731,7 @@
          }
          
          // ==================================================================================
-         // Type filter function
+         // Quick search "type:" filter function
          // ==================================================================================
          
          function addTypeFilter(type) {
@@ -873,7 +875,7 @@
          });
          
          // ==================================================================================
-         // Select all and Deselect all buttons
+         // Select all and deselect all buttons
          // ==================================================================================
          
          selectAllButton.addEventListener('mousedown', () => {
@@ -1127,9 +1129,11 @@
             
             // Show loading indicator
             galleryContainer.innerHTML = `
-                <div class="flex items-center justify-center p-8">
-                    <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-primary"></div>
-                    <span class="ml-3 text-gray-600 dark:text-dark-secondary">Loading images...</span>
+                <div class="flex justify-center items-center p-8">
+                  <div class="bg-white dark:bg-dark-surface shadow-md rounded-lg px-6 py-4 flex items-center space-x-3">
+                    <div class="w-5 h-5 border-2 border-primary border-t-transparent rounded-full animate-spin"></div>
+                    <span class="text-gray-700 dark:text-dark-text font-medium">Loading images...</span>
+                  </div>
                 </div>
             `;
             
@@ -1349,7 +1353,7 @@
          }
          
          // ==================================================================================
-         // PDF Export Function
+         // PDF build function
          // ==================================================================================
          
          async function generatePDF() {
@@ -1741,8 +1745,12 @@
                      await new Promise(resolve => setTimeout(resolve, 200));
                  }
                  
+                 // ==================================================================================
+                 // PDF export function with Swift WebKit interception
+                 // ==================================================================================
+                 
                  if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.exportPDF) {
-                     // Running in macOS app - send to Swift handler
+                     // Running in macOS wrapper app - send to Swift handler
                      const pdfDataUri = pdf.output('datauristring');
                      const fullFilename = `${fileName}-${dateStr}-${timeStr}.pdf`;
                      window.webkit.messageHandlers.exportPDF.postMessage({
