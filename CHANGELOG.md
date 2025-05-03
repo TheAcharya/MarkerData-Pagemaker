@@ -8,6 +8,7 @@
 **🔨 Improvements:**
 - Updated error messages
 - Updated WebKit abstraction dialog function
+- Updated abstraction for PDF export
 
 ---
 
