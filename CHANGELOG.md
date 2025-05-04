@@ -30,4 +30,4 @@
 **🎉 Released:**
 - 3rd May 2025
 
-This is the first public release of **Marker Data Pagemaker**!
+This is the first public release of **Pagemaker**!
