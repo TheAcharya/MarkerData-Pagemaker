@@ -8,11 +8,11 @@
 
 Pagemaker is a lightweight module designed to bridge a key gap in the Marker Data toolset: the ability to generate and export PDFs from [Final Cut Pro](https://www.apple.com/final-cut-pro/)'s Marker metadata with images. Originally, Marker Data lacked native support for PDF export. With the introduction of the Pagemaker module, this limitation has been thoughtfully addressed.
 
-Starting with Marker Data version 1.2.0, **Marker Data now allows users to load a data set, extracted via Notion or Airtable using Marker Data's Extraction Profiles and generate a dynamic, visual web gallery. Once the Data Set is loaded, users can explore its contents through a searchable and filterable interface. Selected items can then be exported into a cleanly formatted, print-ready PDF, making it easy to share with clients, team members, or maintaining as project archives.
+Starting with Marker Data version 1.2.0, Marker Data now allows users to load a data set, extracted via Notion or Airtable using Marker Data's Extraction Profiles and generate a dynamic visual web gallery. Once the Data Set is loaded, users can explore its contents through a searchable and filterable interface. Selected items can then be exported into a cleanly formatted, print-ready PDF, making it easy to share with clients, team members, or maintaining as project archives.
 
 ## Maintenance
 
-Pagemaker was developed as a side project—born from curiosity and a spirit of experimentation. While it is functional and stable, it is not under active development. No additional features or paper sizes are planned, and ongoing maintenance will be minimal. That said, if any bugs or critical issues arise within the existing codebase, we will make a best-effort attempt to resolve them.
+Pagemaker was developed as a side project—born from curiosity and a spirit of experimentation. While it is functional and stable, it will not be under active development. No additional features or paper sizes are planned, and ongoing maintenance will be minimal. That said, if any bugs or critical issues arise within the existing codebase, we will make a best-effort attempt to resolve them.
 
 ## Project Structure
 
