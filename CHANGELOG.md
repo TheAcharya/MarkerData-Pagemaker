@@ -6,7 +6,7 @@
 - 6th May 2025
 
 **🔨 Improvements:**
-- Updated footer messages with link
+- Updated footer with link
 
 ---
 
