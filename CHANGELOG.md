@@ -1,5 +1,15 @@
 # Changelog
 
+### 1.0.3
+
+**🎉 Released:**
+- 5th May 2025
+
+**🔨 Improvements:**
+- Updated footer messages with link
+
+---
+
 ### 1.0.2
 
 **🎉 Released:**
