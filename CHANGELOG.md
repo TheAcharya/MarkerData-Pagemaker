@@ -3,7 +3,7 @@
 ### 1.0.3
 
 **🎉 Released:**
-- 5th May 2025
+- 6th May 2025
 
 **🔨 Improvements:**
 - Updated footer messages with link
