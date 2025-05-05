@@ -1,13 +1,14 @@
 <p align="center">
+  <a href="https://github.com/TheAcharya/MarkerData"><img src="https://raw.githubusercontent.com/TheAcharya/MarkerData-Website/refs/heads/main/docs/assets/md-pagemaker.png">
   <h1 align="center">Pagemaker</h1>
 </p>
 
 
 <p align="center"><a href="https://github.com/TheAcharya/MarkerData-Pagemaker/blob/main/LICENSE"><img src="http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat" alt="license"/></a>&nbsp;<a href="https://github.com/TheAcharya/MarkerData-Pagemaker"><img src="https://img.shields.io/badge/platform-macOS-lightgrey.svg?style=flat" alt="platform"/></p>
 
-Pagemaker is a lightweight web application designed to bridge a key gap in the <a href="https://github.com/TheAcharya/MarkerData" target="_blank">Marker Data</a> toolset: the ability to generate and export PDFs from <a href="https://www.apple.com/final-cut-pro/" target="_blank">Final Cut Pro</a>'s Marker metadata with images. Originally, Marker Data lacked native support for PDF export. With the introduction of the Pagemaker module, this limitation has been thoughtfully addressed.
+Pagemaker is a lightweight module designed to bridge a key gap in the Marker Data toolset: the ability to generate and export PDFs from [Final Cut Pro](https://www.apple.com/final-cut-pro/)'s Marker metadata with images. Originally, Marker Data lacked native support for PDF export. With the introduction of the Pagemaker module, this limitation has been thoughtfully addressed.
 
-This web based application allows users to load a data set, extracted via Notion or Airtable using extraction profiles and generate a dynamic, visual web gallery. Once the data set is loaded, users can explore its contents through a searchable and filterable interface. Selected items can then be exported into a cleanly formatted, print-ready PDF, making it easy to share.
+Starting with Marker Data version 1.2.0, **Marker Data now allows users to load a data set, extracted via Notion or Airtable using Marker Data's Extraction Profiles and generate a dynamic, visual web gallery. Once the Data Set is loaded, users can explore its contents through a searchable and filterable interface. Selected items can then be exported into a cleanly formatted, print-ready PDF, making it easy to share with clients, team members, or maintaining as project archives.
 
 ## Maintenance
 
