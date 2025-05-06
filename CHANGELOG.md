@@ -1,5 +1,13 @@
 # Changelog
 
+### 1.0.4
+
+**🎉 Released:**
+- 7th May 2025
+
+**🔨 Improvements:**
+- Improved exclusion logic for `extract_info.json` file
+
 ### 1.0.3
 
 **🎉 Released:**
