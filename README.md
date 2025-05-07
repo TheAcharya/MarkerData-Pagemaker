@@ -14,9 +14,11 @@ Starting with Marker Data version 1.2.0, Marker Data now allows users to load a 
 
 Pagemaker was developed as an ‘as-is’ side project, driven by curiosity, experimentation, and a desire to create a proof of concept. While it is functional and stable, it will not be under active development. No additional features or paper sizes are planned, and ongoing maintenance will be minimal. That said, if any bugs or critical issues arise within the existing codebase, we will make a best-effort attempt to resolve them.
 
-## Project Structure
+## Project Structure & Tech Stack
 
-The entire application is currently encapsulated within a single HTML file. While this may diverge from conventional development practices—which typically advocate for separating HTML, CSS, and JavaScript—it was an intentional design decision.
+The entire application is currently encapsulated within a single self-contained HTML file. While this may diverge from conventional development practices—which typically advocate for separating HTML, CSS, and JavaScript—it was an intentional design decision.
+
+Pagemaker is developed using vanilla JavaScript and leverages a carefully selected set of lightweight libraries to ensure performance and simplicity. It utilises Tailwind CSS for styling, Lucide for iconography, Fuse.js for client-side fuzzy search functionality, and jsPDF for dynamic PDF generation. Notably, Pagemaker does not rely on any additional external frameworks or libraries, maintaining a streamlined and dependency-minimal architecture.
 
 After careful consideration, I have opted for a unified file structure to ensure easier maintenance and smoother integration with Marker Data’s WebKit View. This approach also simplifies the process of loading the code into AI-assisted tools and platforms, which often benefit from having the full context in a single file.
 
