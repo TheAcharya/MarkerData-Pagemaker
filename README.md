@@ -12,7 +12,7 @@ Starting with Marker Data version 1.2.0, Marker Data now allows users to load a 
 
 ## Maintenance
 
-Pagemaker was developed as a side project—born from curiosity and a spirit of experimentation. While it is functional and stable, it will not be under active development. No additional features or paper sizes are planned, and ongoing maintenance will be minimal. That said, if any bugs or critical issues arise within the existing codebase, we will make a best-effort attempt to resolve them.
+Pagemaker was developed as an ‘as-is’ side project, driven by curiosity, experimentation, and a desire to create a proof of concept. While it is functional and stable, it will not be under active development. No additional features or paper sizes are planned, and ongoing maintenance will be minimal. That said, if any bugs or critical issues arise within the existing codebase, we will make a best-effort attempt to resolve them.
 
 ## Project Structure
 
