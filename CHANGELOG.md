@@ -1,5 +1,16 @@
 # Changelog
 
+### 1.0.5
+
+**🎉 Released:**
+- 8th May 2025
+
+**🔨 Improvements:**
+- Added `Additional Metadata` box for `Column 1` selection
+- Added `Library Name` to Summary Box
+
+---
+
 ### 1.0.4
 
 **🎉 Released:**
