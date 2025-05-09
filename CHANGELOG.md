@@ -1,5 +1,15 @@
 # Changelog
 
+### 1.0.6
+
+**🎉 Released:**
+- 9th May 2025
+
+**🔨 Improvements:**
+- Removed unused variable
+
+---
+
 ### 1.0.5
 
 **🎉 Released:**
