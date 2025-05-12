@@ -39,3 +39,7 @@ For bug reports, feature requests and suggestions you can create a new [issue](h
 ## Contribution
 
 Community contributions are welcome and appreciated. Developers are encouraged to fork the repository and submit pull requests to enhance functionality or introduce thoughtful improvements. However, a key requirement is that nothing should break—all existing features, behaviours theme and styling must remain fully functional and unchanged. Once reviewed and approved, updates will be merged into the main branch and made available within the Marker Data.
+
+## Attribution
+
+PageMaker® is a registered trademark of Adobe Inc. References to PageMaker in this project are for historical context and educational purposes, and do not imply any affiliation with or endorsement by Adobe Inc.
