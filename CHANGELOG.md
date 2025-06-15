@@ -6,7 +6,7 @@
 - 15th June 2025
 
 **🔨 Improvements:**
-- Aspect ratio preservation – Vertical images (e.g., 1080×1920) now maintain correct proportions in PDF exports, matching their appearance in gallery view.
+- Aspect ratio preservation – Vertical images (e.g., 1080×1920) now maintain correct proportions in PDF exports, matching their appearance in gallery view
 
 ---
 
