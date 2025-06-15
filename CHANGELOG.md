@@ -1,5 +1,15 @@
 # Changelog
 
+### 1.0.7
+
+**🎉 Released:**
+- 15th June 2025
+
+**🔨 Improvements:**
+- Aspect ratio preservation – Vertical images (e.g., 1080×1920) now maintain correct proportions in PDF exports, matching their appearance in gallery view.
+
+---
+
 ### 1.0.6
 
 **🎉 Released:**
