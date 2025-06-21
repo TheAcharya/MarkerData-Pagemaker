@@ -1,0 +1,117 @@
+# .cursorrules
+# 
+# Configuration rules for the Pagemaker single-file web app.
+# 
+# This is a purpose-built HTML/JS micro-application designed to:
+# - Generate a searchable gallery from Final Cut Pro marker metadata
+# - Export clean, image-rich, print-ready PDFs with configurable compression
+# - Convert emojis to readable text in PDFs for compatibility
+# - Run fully offline and locally, including under WebViewKit macOS wrappers
+# 
+# TOOLING DIRECTIVE:
+# I need a 100% bulletproof solution. Strictly use Tailwind CSS whenever possible. 
+# All functionality MUST be kept the same and be intact. 
+# Focus on these tasks, improvements and tweaks ONLY. 
+# KEEP the structure and code base intact. 
+# KEEP all the themes, icons, layout and intact. Don't change anything else. 
+# Design for mac-OS and Safari.
+
+[general]
+unified_file = true
+preserve_structure = true
+prefer_tailwind = true
+allow_external_dependencies = false
+language = "html"
+target_browser = "Safari"
+target_platform = "macOS"
+style_guide = "tailwindcss"
+project_name = "Pagemaker"
+
+[html]
+allow_inline_scripts = true
+allow_inline_styles = true
+preserve_head_tags = true
+preserve_meta_tags = true
+preserve_dom_structure = true
+disallow_html_split = true
+
+[js]
+framework = "vanilla"
+allow_fuse_js = true
+allow_jspdf = true
+allow_lucide_icons = true
+prefer_modular_functions = true
+disallow_frameworks = ["react", "vue", "angular", "jquery"]
+disallow_eval = true
+disallow_document_write = true
+require_dark_mode_support = true
+
+[css]
+preferred_framework = "tailwind"
+disallow_custom_css = false  # Custom styles used in <style> for print + behavior
+prefer_utility_classes = true
+
+[icons]
+icon_library = "lucide"
+disallow_other_icon_sets = true
+
+[pdf_export]
+library = "jsPDF"
+must_include_images = true
+must_work_in_safari = true
+must_support_local_file_access = true
+disable_file_restriction_prompt = true
+preserve_layout = true
+print_ready = true
+compression_levels = ["None", "Low", "Medium", "High"]
+default_compression = "Medium"
+preserve_png_for_none_compression = true
+convert_gifs_to_jpeg_for_pdf = true
+
+[emoji_handling]
+database_source = "https://unpkg.com/unicode-emoji-json@0.8.0/data-by-emoji.json"
+convert_emojis_to_text_in_pdf = true
+preserve_emojis_in_gallery = true
+fallback_conversion = "[emoji]"
+cache_database_in_memory = true
+
+[search]
+search_library = "fuse.js"
+maintain_fuzzy_search = true
+support_tag_filters = true
+
+[performance]
+optimize_for_local_execution = true
+minimize_dom_repaints = true
+avoid_heavy_dom_manipulation = true
+prefer_request_animation_frame = true
+cache_emoji_database = true
+
+[app_structure]
+app_type = "single_file_web_app"
+dom_injection_via_js = true
+pdf_generation_with_js = true
+search_and_filter_ui = true
+drop_zone_support = true
+webview_compatibility = true
+compression_settings_modal = true
+
+[safari]
+ensure_disable_local_file_restrictions_prompt = true
+support_blob_url_image_loading = true
+support_webkitdirectory_input = true
+test_target = "Safari on macOS"
+
+[ui]
+dark_mode_enabled = true
+responsive_tailwind_layout = true
+tooltip_support = true
+icon_button_overlays = true
+compression_slider_ui = true
+modal_design = "themed_popup"
+
+[security]
+avoid_cross_origin_requests = true
+local_only_file_handling = true
+no_network_dependency = false  # Allow emoji database fetch from unpkg CDN
+allowed_external_sources = ["unpkg.com", "cdn.tailwindcss.com", "unpkg.com/lucide", "cdnjs.cloudflare.com", "cdn.jsdelivr.net"]

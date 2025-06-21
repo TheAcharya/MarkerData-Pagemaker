@@ -1,0 +1,14 @@
+# Ignore system and OS metadata
+.DS_Store
+Thumbs.db
+
+# Ignore version control artifacts
+.git/
+.gitignore
+
+# Ignore standard documentation files
+SECURITY.md
+README.md
+LICENSE
+CODE_OF_CONDUCT.md
+CHANGELOG.md

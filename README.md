@@ -8,7 +8,7 @@
 
 Pagemaker is a lightweight module designed to bridge a key gap in the [Marker Data](https://github.com/TheAcharya/MarkerData) toolset: the ability to generate and export PDFs from [Final Cut Pro](https://www.apple.com/final-cut-pro/)'s Marker metadata with images. Originally, Marker Data lacked native support for PDF export. With the introduction of the Pagemaker module, this limitation has been thoughtfully addressed.
 
-Starting with Marker Data version 1.2.0, Marker Data now allows users to load a data set, extracted via Notion or Airtable using Marker Data's Extraction Profiles and generate a dynamic visual web gallery. Once the Data Set is loaded, users can explore its contents through a searchable and filterable interface. Selected items can then be exported into a cleanly formatted, print-ready PDF, making it easy to share with clients, team members, or maintaining as project archives.
+Starting with Marker Data version 1.2.0, Marker Data now allows users to load a Data set, extracted via Notion or Airtable using Marker Data's Extraction Profiles and generate a dynamic visual web gallery. Once the Data Set is loaded, users can explore its contents through a searchable and filterable interface. Selected items can then be exported into a cleanly formatted, print-ready PDF, making it easy to share with clients, team members, or maintaining as project archives.
 
 ## Maintenance
 
@@ -18,7 +18,7 @@ Pagemaker was developed as an ‘as-is’ side project, driven by curiosity, exp
 
 The entire application is currently encapsulated within a single self-contained HTML file. While this may diverge from conventional development practices—which typically advocate for separating HTML, CSS, and JavaScript—it was an intentional design decision.
 
-Pagemaker is developed using vanilla JavaScript and leverages a carefully selected set of lightweight libraries to ensure performance and simplicity. It utilises Tailwind CSS for styling, Lucide for iconography, Fuse.js for client-side fuzzy search functionality, and jsPDF for dynamic PDF generation. Notably, Pagemaker does not rely on any additional external frameworks or libraries, maintaining a streamlined and dependency-minimal architecture.
+Pagemaker is developed using vanilla JavaScript and leverages a carefully selected set of lightweight libraries to ensure performance and simplicity. It utilises Tailwind CSS for styling, Lucide for iconography, Fuse.js for client-side fuzzy search functionality, jsPDF for dynamic PDF generation and Unicode Emoji JSON for database lookup and descriptive text conversion. Notably, Pagemaker does not rely on any additional external frameworks or libraries, maintaining a streamlined and dependency-minimal architecture.
 
 After careful consideration, I have opted for a unified file structure to ensure easier maintenance and smoother integration with Marker Data’s WebKit View. This approach also simplifies the process of loading the code into AI-assisted tools and platforms, which often benefit from having the full context in a single file.
 
