@@ -6,7 +6,7 @@
 - 21st June 2025
 
 **🔨 Improvements:**
-- Added a new `PDF Compression` dialog box - Click the `Gear`` icon to reveal a compression slider with four levels – `None`, `Low`, `Medium`, and `High`
+- Added a new `PDF Compression` dialog box - Click the `Gear` icon to reveal a compression slider with four levels – `None`, `Low`, `Medium`, and `High`
 - Significantly enhanced the image compression algorithm for `Export PDF`
 - Added support for emojis in Marker Data's extracted data sets using the [Unicode Emoji JSON](https://github.com/muan/unicode-emoji-json) database
 - Emojis will now be automatically converted to descriptive text during PDF export - For example, `🔥 Metaburner` becomes `[fire] Metaburner`
